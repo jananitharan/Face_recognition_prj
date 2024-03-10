@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Image Upload</title>
+</head>
+<body>
+<div class ="container">
+    <h1>Upload an Image</h1>
+    <form method="post" enctype="multipart/form-data">
+        <label for="username">Name:</label>
+        <input type="text" id ="username" name="username" required>
+        <br>
+        <label for="image">Image:</label>
+        <input type="file" name="image" id ="image" accept="image/*" required>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+<style>
+     body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#username[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, button {
+    margin-bottom: 16px;
+}
+
+button {
+  background-color: #808080;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin-left: 220px;
+  cursor: pointer;
+}
+
+button:hover {
+    background-color: #001c0a;
+}
+
+</style>
+</body>
+</html>
